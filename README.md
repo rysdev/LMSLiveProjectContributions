@@ -9,8 +9,6 @@ The following sections will break down some of the contributions I made to this 
 
 Summary: Created new model keeping track of information of latest contact made to students
 
-Tasks
-
 *Added new model with properties to track when a student was last contacted
 
 *Updated migration files to handle new model
@@ -23,8 +21,6 @@ Tasks
 
 Summary: Created a new viewmodel for showing a snapshot of student job placement progress
 
-Tasks
-
 *Added new view model that would represent important information to track about student progress in a job placement course
 
 *Added snapshot controller to handle assembling student data into snapshot objects
@@ -34,8 +30,6 @@ Tasks
 ## StudentApplicationManager : 
 
 Summary: Added functionality to the student application manager 
-
-Tasks
 
 *Added submenu to navbar dropdown of layout view for routing to student application manager 
 
