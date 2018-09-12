@@ -1,0 +1,86 @@
+﻿@model IEnumerable<JobPlacementDashboard.Models.JPApplication>
+
+@{
+    ViewBag.Title = "StudentIndex";
+}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+<h2>StudentIndex</h2>
+
+<br />
+
+<div>
+    <h3>
+        Total Applications Completed: @ViewBag.TotalApplications
+    </h3>
+
+    <h3>
+        How Many To Reach 35 Applications: @ViewBag.AppGoal
+    </h3>
+</div>
+
+<br />
+
+<div class="row" style="padding-left:1%;">
+    <!-- Filter Results Form-->
+    <div class="input-group">
+        @using (Html.BeginForm())
+        {
+            <p>
+                @Html.TextBox("searchString", null, new { placeholder = "Company Name" })
+                <input type="submit" value="Filter" />
+            </p>
+        }
+    </div>
+</div>
+
+<br />
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.ActionLink("Company", "StudentIndex", new { sortOrder = ViewBag.CompanySort, searchString = ViewBag.searchString })
+        </th>
+        <th>
+            @Html.ActionLink("Job Title", "StudentIndex", new { sortOrder = ViewBag.TitleSort, searchString = ViewBag.searchString })
+        </th>
+        <th>
+            @Html.ActionLink("Location", "StudentIndex", new { sortOrder = ViewBag.CitySort, searchString = ViewBag.searchString })
+        </th>
+        <th>
+            @Html.ActionLink("Application Date", "StudentIndex", new { sortOrder = ViewBag.DateSort, searchString = ViewBag.searchString })
+        </th>
+    
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.JPCompanyName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JPJobTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JPCompanyCity),
+            @Html.DisplayFor(modelItem => item.JPCompanyState)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JPApplicationDate.ToShortDateString())
+     
+        </td>
+
+       
+  <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.JPAppId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.JPAppId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.JPAppId })
+        </td>
+    </tr>
+}
+
+</table>
