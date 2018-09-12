@@ -1,0 +1,99 @@
+﻿@model JobPlacementDashboard.ViewModels.SnapshotViewModel
+
+@{
+    ViewBag.Title = "Snapshot";
+}
+
+<h2>Snapshot</h2>
+
+@Html.LabelFor(model => model.TotalWeeklyApplications)<br />
+@Html.DisplayFor(model => model.TotalWeeklyApplications)<br />
+@Html.LabelFor(model => model.TotalWeeklyHires)<br />
+@Html.DisplayFor(model => model.TotalWeeklyHires)<br />
+@Html.LabelFor(model => model.TotalStudents)<br />
+@Html.DisplayFor(model => model.TotalStudents)<br />
+@Html.LabelFor(model => model.UnhiredGraduates)<br />
+@Html.DisplayFor(model => model.UnhiredGraduates)<br />
+@Html.LabelFor(model => model.AvgDaysInJP)<br />                @*/* PB */*@
+@Html.DisplayFor(model => model.AvgDaysInJP)<br />
+@Html.LabelFor(model => model.TotalDaysInJP)<br />
+@Html.DisplayFor(model => model.TotalDaysInJP)<br />
+
+<h3>Weekly Hires</h3>
+
+<table class="table">
+    <tr>
+        <th>
+            First Name
+        </th>
+        <th>
+            Last Name
+        </th>
+        <th>
+            Job Title
+        </th>
+        <th>
+            Company Name
+        </th>
+        <th>
+            Company City
+        </th>
+        <th>
+            Hire Date
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.WeeklyHires)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApplicationUser.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApplicationUser.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JPJobTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JPCompanyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JPCompanyCity)
+            </td>
+            <td>
+                <!--showing HireDate without hours/minutes-->
+                @item.JPHireDate.ToShortDateString()
+            </td>
+        </tr>
+    }
+
+</table>
+
+<h3>New Students</h3>
+
+<table class="table">
+    <tr>
+        <th>
+            Student Name
+        </th>
+        <th>
+            Start Date
+        </th>
+    </tr>
+
+    @foreach (var item in Model.NewStudents)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.JPName)
+            </td>
+            <td>
+                <!--showing JPStartDate without hours/minutes-->
+                @item.JPStartDate.ToShortDateString()
+            </td>
+        </tr>
+    }
+
+</table>
