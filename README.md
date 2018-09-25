@@ -36,3 +36,6 @@ Summary: Added functionality to the student application manager.
 *Updated application controller and student view to handle sorting of applications by company name, job title, company location or application date
 
 *Updated application controller and student view to filter displayed applications using text input
+
+
+Disclaimer: Permission given by owner for me to post a selection of individual files I worked on.
