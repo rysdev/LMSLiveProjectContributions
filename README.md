@@ -38,4 +38,4 @@ Summary: Added functionality to the student application manager.
 *Updated application controller and student view to filter displayed applications using text input
 
 
-Disclaimer: Permission given by owner for me to post a selection of individual files I worked on.
+Disclaimer: Permission given by owner to post a selection of files I worked on.
