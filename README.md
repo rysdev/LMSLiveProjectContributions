@@ -37,5 +37,5 @@ Summary: Added functionality to the student application manager.
 
 *Updated application controller and student view to filter displayed applications using text input
 
-
+##
 Disclaimer: Permission given by owner to post a selection of files from the live project.
