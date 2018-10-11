@@ -7,7 +7,7 @@ The following sections will break down some of the contributions I made to this 
 
 ## LatestContactModel : 
 
-Summary: Created new model keeping track of information of latest contact made to students.
+Created new model keeping track of information of latest contact made to students.
 
 * Added new model with properties to track when a student was last contacted
 
@@ -19,7 +19,7 @@ Summary: Created new model keeping track of information of latest contact made t
 
 ## SnapshotViewModel : 
 
-Summary: Created a new viewmodel for showing a snapshot of student job placement progress.
+Created a new viewmodel for showing a snapshot of student job placement progress.
 
 * Added new view model that would represent important information to track about student progress in a job placement course
 
@@ -29,7 +29,7 @@ Summary: Created a new viewmodel for showing a snapshot of student job placement
 
 ## StudentApplicationManager : 
 
-Summary: Added functionality to the student application manager.
+Added functionality to the student application manager.
 
 * Added submenu to navbar dropdown of layout view for routing to student application manager 
 
