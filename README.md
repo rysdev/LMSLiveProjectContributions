@@ -29,7 +29,7 @@ Created a new viewmodel for showing a snapshot of student job placement progress
 
 ## StudentApplicationManager : 
 
-Added functionality to the student application manager.
+New features for the student application manager.
 
 * Added submenu to navbar dropdown of layout view for routing to student application manager 
 
