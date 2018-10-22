@@ -13,9 +13,7 @@ Created new model keeping track of information of latest contact made to student
 
 * Updated migration files to handle new model
 
-* Applied new migration
-
-* Updated database
+* Applied new migration and updated database
 
 ## SnapshotViewModel : 
 
