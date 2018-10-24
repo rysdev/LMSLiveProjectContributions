@@ -5,7 +5,7 @@ All features implemented relate to a section of the LMS that manages students en
 
 The following sections will break down some of the contributions I made to this project.
 
-## LatestContactModel : 
+## LatestContactModel
 
 Created new model keeping track of information of latest contact made to students.
 
@@ -15,7 +15,7 @@ Created new model keeping track of information of latest contact made to student
 
 * Applied new migration and updated database
 
-## SnapshotViewModel : 
+## SnapshotViewModel
 
 Created a new viewmodel for showing a snapshot of student job placement progress.
 
@@ -25,7 +25,7 @@ Created a new viewmodel for showing a snapshot of student job placement progress
 
 * Added view for snapshot to display snapshot object data for all current students
 
-## StudentApplicationManager : 
+## StudentApplicationManager
 
 Added features for students using the job placement manager.
 
