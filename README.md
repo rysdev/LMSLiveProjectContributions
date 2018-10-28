@@ -1,5 +1,5 @@
 # LMSLiveProjectContributions
-A breakdown of my contributions to a live Learning Management System.
+A breakdown of my contributions to a live Learning Management System website.
 
 All features implemented relate to a section of the LMS that manages students enrolled in a job placement course.
 
