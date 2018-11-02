@@ -36,4 +36,4 @@ Added features for students using the job placement manager.
 * Updated application controller and student view to filter displayed applications using text input
 
 ##
-Disclaimer: Permission given by project owner to post a selection of files.
+Disclaimer: Permission given by project owner to post a selection of files that I worked on.
