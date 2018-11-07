@@ -7,7 +7,7 @@ The following sections will break down some of the contributions I made to this 
 
 ## LatestContactModel
 
-Created new model keeping track of information of latest contact made to students.
+Created new model keeping track of information of latest contact made to students by instructor.
 
 * Added new model with properties to track when a student was last contacted
 
