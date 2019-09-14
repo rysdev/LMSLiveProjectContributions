@@ -1,7 +1,7 @@
 # LMSLiveProjectContributions
 A selection of my contributions for a live Learning Management System website.
 
-All features implemented relate to a section of the LMS that manages students enrolled in a job placement course
+All features implemented relate to a section of the LMS that manages students enrolled in a job placement course.
 
 The following sections will break down some of the contributions I made to this project.
 
