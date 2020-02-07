@@ -17,7 +17,7 @@ Created new model keeping track of information of latest contact made to student
 
 ## SnapshotViewModel
 
-Created a new viewmodel for showing a snapshot of student job placement progress.
+Created a new viewmodel for showing a snapshot of student job placement progress
 
 * Added new view model that would represent important information to track about student progress in a job placement course
 
