@@ -29,7 +29,7 @@ Created a new viewmodel for showing a snapshot of student job placement progress
 
 Added features for students using the job placement manager.
 
-* Added submenu to navbar dropdown of layout view for routing to student application manager.
+* Added submenu to navbar dropdown of layout view for routing to student application manager
 
 * Updated application controller and student view to handle sorting of applications by company name, job title, company location or application date
 
